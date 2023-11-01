@@ -1,0 +1,4 @@
+# The text below is an example of what is logged
+# The actual logs are not tracked (see .gitignore)
+2023-11-01 16:03:37,982 - Logger - INFO - Log message
+2023-11-01 16:03:45,626 - Logger - INFO - Log message
