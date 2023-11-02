@@ -22,6 +22,7 @@ RUN crontab /etc/cron.d/cron-jobs
 # Create cron and python log files to be able to run tail -f from the beggining
 #  (otherwise, this files would be created when the jobs are executed)
 RUN touch /var/log/cron.log
+RUN touch /app/log.log
 
 # By default, when running a container, run cron and monitor cron log
 CMD cron && tail -f /var/log/cron.log
