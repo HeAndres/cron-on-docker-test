@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y cron
 COPY script.py /app/
 WORKDIR /app
 
-RUN chmod 777 script.py
+RUN chmod 0744 script.py
 
 COPY cron-jobs /etc/cron.d/cron-jobs
 
